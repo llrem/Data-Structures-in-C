@@ -42,7 +42,6 @@ Status ListDelete(SqList *L,int i){	//删除数据
 	for(int j=i;j<L->length;j++){//移动元素
 		L->elem[j-1]=L->elem[j];
 	}
-	L->elem[L->length-1]=0;//赋值为0
 	L->length-=1;
 	return OK;
 }
